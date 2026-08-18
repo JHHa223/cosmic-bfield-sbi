@@ -325,7 +325,7 @@ whereas the perturbation amplitude and damping ratio primarily affect the transi
 
 If you use this code in scientific work, please cite the associated paper:
 
-> J.-H. Ha, *Neural Simulation-Based Inference of Plasma Parameters from Cosmic Magnetic-Field Evolution*.
+> J.-H. Ha, *Neural Simulation-Based Inference of Plasma Parameters from Cosmic Magnetic-Field Evolution*, Astronomy and Computing, submitted.
 
 Publication information and DOI will be added when available.
 
