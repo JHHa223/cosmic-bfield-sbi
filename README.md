@@ -68,15 +68,15 @@ Evaluation products are generated locally by `evaluate_sbi.py` and are not inclu
 
 The forward model evolves the normalized magnetic field
 
-$$
+$
 b \equiv \frac{B}{B_0},
 \qquad
 \tau \equiv \Omega_{i,0} t.
-$$
+$
 
 The four independent physical coordinates are
 
-$$
+$
 \theta =
 \left(
 |\Delta_0|,
@@ -84,15 +84,15 @@ $$
 \frac{\Gamma_d}{\Gamma_c^{(\mathrm{inst})}},
 R_{\mathrm{coll}}
 \right),
-$$
+$
 
 where
 
-$$
+$
 R_{\mathrm{coll}}
 =
 \frac{\nu_{ii}}{\nu_{\mathrm{scatt},0}}.
-$$
+$
 
 All four coordinates are sampled uniformly in $\log_{10}$.
 
@@ -105,25 +105,25 @@ All four coordinates are sampled uniformly in $\log_{10}$.
 
 The default calculation adopts
 
-$$
+$
 \beta_0 = 2\times10^{22},
-$$
+$
 
 and stores 512 logarithmically spaced time samples over
 
-$$
+$
 1 \leq \tau \leq 10^6.
-$$
+$
 
 The quasi-stability saturation field is
 
-$$
+$
 b_{\mathrm{sat}}
 =
 \left(
 \frac{\beta_0 |\Delta_0|}{2}
 \right)^{1/2}.
-$$
+$
 
 Only physically amplifying, finite, and approximately monotonic magnetic-field histories are retained.
 
@@ -182,7 +182,7 @@ bfield_dataset_100k/
 
 The amortized neural posterior estimator is trained in logarithmic coordinates,
 
-$$
+$
 \theta_{\log} =
 \left(
 \log_{10}|\Delta_0|,
@@ -190,15 +190,15 @@ $$
 \log_{10}\frac{\Gamma_d}{\Gamma_c^{(\mathrm{inst})}},
 \log_{10}R_{\mathrm{coll}}
 \right).
-$$
+$
 
 The magnetic-field input is transformed as
 
-$$
+$
 x(\tau)
 =
 \frac{\log_{10}[B(\tau)/B_0]}{10.5}.
-$$
+$
 
 The inference model uses:
 
@@ -326,9 +326,9 @@ The goal of the SBI analysis is to determine which plasma parameters are robustl
 
 In the adopted forward model, the equilibrium pressure anisotropy $|\Delta_0|$ directly controls the saturation amplitude through
 
-$$
+$
 b_{\mathrm{sat}} \propto |\Delta_0|^{1/2},
-$$
+$
 
 whereas the perturbation amplitude and damping ratio primarily affect the transient amplification history. Posterior predictive reconstruction and parameter identifiability should therefore be interpreted separately: an accurately reconstructed $B(t)$ history does not necessarily imply unique recovery of every underlying plasma parameter.
 
@@ -346,5 +346,6 @@ Publication information and DOI will be added when available.
 
 ## Contact
 
-Ji-Hoon Ha  
+Ji-Hoon Ha
 Korea Astronomy and Space Science Institute (KASI)
+E-mail: jhha@kasi.re.kr
