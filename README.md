@@ -313,9 +313,9 @@ The goal of the SBI analysis is to determine which plasma parameters are robustl
 
 In the adopted forward model, the equilibrium pressure anisotropy $|\Delta_0|$ directly controls the saturation amplitude through
 
-$
+$$
 b_{\mathrm{sat}} \propto |\Delta_0|^{1/2},
-$
+$$
 
 whereas the perturbation amplitude and damping ratio primarily affect the transient amplification history. Posterior predictive reconstruction and parameter identifiability should therefore be interpreted separately: an accurately reconstructed $B(t)$ history does not necessarily imply unique recovery of every underlying plasma parameter.
 
