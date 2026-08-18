@@ -68,15 +68,15 @@ Evaluation products are generated locally by `evaluate_sbi.py` and are not inclu
 
 The forward model evolves the normalized magnetic field
 
-$
+$$
 b \equiv \frac{B}{B_0},
 \qquad
 \tau \equiv \Omega_{i,0} t.
-$
+$$
 
 The four independent physical coordinates are
 
-$
+$$
 \theta =
 \left(
 |\Delta_0|,
@@ -84,46 +84,46 @@ $
 \frac{\Gamma_d}{\Gamma_c^{(\mathrm{inst})}},
 R_{\mathrm{coll}}
 \right),
-$
+$$
 
 where
 
-$
+$$
 R_{\mathrm{coll}}
 =
 \frac{\nu_{ii}}{\nu_{\mathrm{scatt},0}}.
-$
+$$
 
 All four coordinates are sampled uniformly in $\log_{10}$.
 
 | Parameter | Sampling range |
 |---|---:|
-| $|\Delta_0|$ | $10^{-4}$ -- $10^{-1}$ |
-| $|\delta\Delta/\Delta_0|$ | $10^{-6}$ -- $10^{-1}$ |
-| $\Gamma_d/\Gamma_c^{(\mathrm{inst})}$ | $10^{-4}$ -- $10^{2}$ |
-| $R_{\mathrm{coll}}$ | $10^{-2}$ -- $0.9$ |
+| $$|\Delta_0|$$ | $10^{-4}$ -- $10^{-1}$ |
+| $$|\delta\Delta/\Delta_0|$$ | $10^{-6}$ -- $10^{-1}$ |
+| $$\Gamma_d/\Gamma_c^{(\mathrm{inst})}$$ | $10^{-4}$ -- $10^{2}$ |
+| $$R_{\mathrm{coll}}$$ | $10^{-2}$ -- $0.9$ |
 
 The default calculation adopts
 
-$
+$$
 \beta_0 = 2\times10^{22},
-$
+$$
 
 and stores 512 logarithmically spaced time samples over
 
-$
+$$
 1 \leq \tau \leq 10^6.
-$
+$$
 
 The quasi-stability saturation field is
 
-$
+$$
 b_{\mathrm{sat}}
 =
 \left(
 \frac{\beta_0 |\Delta_0|}{2}
 \right)^{1/2}.
-$
+$$
 
 Only physically amplifying, finite, and approximately monotonic magnetic-field histories are retained.
 
@@ -182,7 +182,7 @@ bfield_dataset_100k/
 
 The amortized neural posterior estimator is trained in logarithmic coordinates,
 
-$
+$$
 \theta_{\log} =
 \left(
 \log_{10}|\Delta_0|,
@@ -190,15 +190,15 @@ $
 \log_{10}\frac{\Gamma_d}{\Gamma_c^{(\mathrm{inst})}},
 \log_{10}R_{\mathrm{coll}}
 \right).
-$
+$$
 
 The magnetic-field input is transformed as
 
-$
+$$
 x(\tau)
 =
 \frac{\log_{10}[B(\tau)/B_0]}{10.5}.
-$
+$$
 
 The inference model uses:
 
