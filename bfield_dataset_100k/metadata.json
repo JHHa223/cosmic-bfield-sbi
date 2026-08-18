@@ -1,0 +1,40 @@
+{
+  "n_samples": 100000,
+  "workers": 32,
+  "batch_size": 128,
+  "seed": 42,
+  "elapsed_seconds": 493.7828710079193,
+  "rate_curves_per_second": 202.51816308629344,
+  "rejected_attempts": 2,
+  "model_config": {
+    "beta0": 2e+22,
+    "tau_output_min": 1.0,
+    "tau_output_max": 1000000.0,
+    "n_time": 512,
+    "delta0_min": 0.0001,
+    "delta0_max": 0.1,
+    "perturb_ratio_min": 1e-06,
+    "perturb_ratio_max": 0.1,
+    "gamma_ratio_min": 0.0001,
+    "gamma_ratio_max": 100.0,
+    "r_coll_min": 0.01,
+    "r_coll_max": 0.9,
+    "rtol": 1e-07,
+    "atol": 1e-09
+  },
+  "parameter_columns": [
+    "|Delta_0|",
+    "|deltaDelta/Delta_0|",
+    "Gamma_d/Gamma_c^(inst)",
+    "nu_ii/Omega_i,0"
+  ],
+  "aux_columns": [
+    "R_coll=nu_ii/nu_scatt,0",
+    "nu_scatt,0/Omega_i,0",
+    "Gamma_c^(inst)/Omega_i,0",
+    "Gamma_d/Omega_i,0",
+    "tau_sat",
+    "B_sat/B0",
+    "initial_db_dtau"
+  ]
+}
