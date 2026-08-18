@@ -92,8 +92,7 @@ $R_{\mathrm{coll}}=\frac{\nu_{ii}}{\nu_{\mathrm{scatt},0}}.$
 
 All four coordinates are sampled uniformly in $\log_{10}$.
 
-| Parameter | Sampling range |
-|---|---:|
+| Parameter | Sampling range ||---|---:|
 | $|\Delta_0|$ | $10^{-4}$ -- $10^{-1}$ |
 | $|\delta\Delta/\Delta_0|$ | $10^{-6}$ -- $10^{-1}$ |
 | $\Gamma_d/\Gamma_c^{(\mathrm{inst})}$ | $10^{-4}$ -- $10^{2}$ |
