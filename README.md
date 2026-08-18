@@ -101,19 +101,19 @@ All four coordinates are sampled uniformly in $\log_{10}$.
 
 The default calculation adopts
 
-$
+$$
 \beta_0 = 2\times10^{22},
-$
+$$
 
 and stores 512 logarithmically spaced time samples over
 
-$
+$$
 1 \leq \tau \leq 10^6.
-$
+$$
 
 The quasi-stability saturation field is
 
-$b_{\mathrm{sat}}=\left(\frac{\beta_0 |\Delta_0|}{2}\right)^{1/2}.$
+$$b_{\mathrm{sat}}=\left(\frac{\beta_0 |\Delta_0|}{2}\right)^{1/2}.$$
 
 Only physically amplifying, finite, and approximately monotonic magnetic-field histories are retained.
 
