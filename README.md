@@ -92,13 +92,13 @@ $R_{\mathrm{coll}}=\frac{\nu_{ii}}{\nu_{\mathrm{scatt},0}}.$
 
 All four coordinates are sampled uniformly in $\log_{10}$.
 
-$$|\Delta_0| = 10^{-4} -- 10^{-1}$$
+$$|\Delta_0| = 10^{-4} - 10^{-1}$$
 
-$$|\delta\Delta/\Delta_0| = 10^{-6} -- 10^{-1}$$
+$$|\delta\Delta/\Delta_0| = 10^{-6} - 10^{-1}$$
 
-$$\Gamma_d/\Gamma_c^{(\mathrm{inst})} = 10^{-4} -- 10^{2}$$
+$$\Gamma_d/\Gamma_c^{(\mathrm{inst})} = 10^{-4} - 10^{2}$$
 
-$$R_{\mathrm{coll}} = 10^{-2} -- 0.9$$
+$$R_{\mathrm{coll}} = 10^{-2} - 0.9$$
 
 The default calculation adopts
 
@@ -173,7 +173,7 @@ bfield_dataset_100k/
 
 The amortized neural posterior estimator is trained in logarithmic coordinates,
 
-$
+$$
 \theta_{\log} =
 \left(
 \log_{10}|\Delta_0|,
@@ -181,11 +181,11 @@ $
 \log_{10}\frac{\Gamma_d}{\Gamma_c^{(\mathrm{inst})}},
 \log_{10}R_{\mathrm{coll}}
 \right).
-$
+$$
 
 The magnetic-field input is transformed as
 
-$x(\tau)=\frac{\log_{10}[B(\tau)/B_0]}{10.5}.$
+$$x(\tau)=\frac{\log_{10}[B(\tau)/B_0]}{10.5}.$$
 
 The inference model uses:
 
