@@ -1,0 +1,88 @@
+{
+  "data_dir": "/home/jhha/project2/bfield_dataset_100k",
+  "out_dir": "/home/jhha/project2/sbi_npe_run",
+  "seed": 42,
+  "device": "cuda",
+  "n_samples_total": 100000,
+  "n_development": 90000,
+  "n_test": 10000,
+  "n_time": 512,
+  "theta_parameter_names": [
+    "log10_abs_Delta0",
+    "log10_abs_deltaDelta_over_Delta0",
+    "log10_Gamma_d_over_Gamma_c_inst",
+    "log10_R_coll"
+  ],
+  "prior_low_log10": [
+    -4.0,
+    -6.0,
+    -4.0,
+    -2.0
+  ],
+  "prior_high_log10": [
+    -1.0,
+    -1.0,
+    2.0,
+    -0.045757491141557693
+  ],
+  "x_transform": "log10(B/B0) / x_scale",
+  "x_scale": 10.5,
+  "cnn_layers": 4,
+  "pool_kernel": 4,
+  "embedding_dim": 64,
+  "density_estimator": "nsf",
+  "hidden_features": 128,
+  "num_transforms": 8,
+  "num_bins": 10,
+  "batch_size": 4096,
+  "learning_rate": 0.0002,
+  "validation_fraction": 0.1,
+  "stop_after_epochs": 200,
+  "max_epochs": 400,
+  "clip_max_norm": 5.0,
+  "dataloader_workers": 4,
+  "elapsed_seconds": 5111.140777826309,
+  "dataset_metadata": {
+    "n_samples": 100000,
+    "workers": 32,
+    "batch_size": 128,
+    "seed": 42,
+    "elapsed_seconds": 493.7828710079193,
+    "rate_curves_per_second": 202.51816308629344,
+    "rejected_attempts": 2,
+    "model_config": {
+      "beta0": 2e+22,
+      "tau_output_min": 1.0,
+      "tau_output_max": 1000000.0,
+      "n_time": 512,
+      "delta0_min": 0.0001,
+      "delta0_max": 0.1,
+      "perturb_ratio_min": 1e-06,
+      "perturb_ratio_max": 0.1,
+      "gamma_ratio_min": 0.0001,
+      "gamma_ratio_max": 100.0,
+      "r_coll_min": 0.01,
+      "r_coll_max": 0.9,
+      "rtol": 1e-07,
+      "atol": 1e-09
+    },
+    "parameter_columns": [
+      "|Delta_0|",
+      "|deltaDelta/Delta_0|",
+      "Gamma_d/Gamma_c^(inst)",
+      "nu_ii/Omega_i,0"
+    ],
+    "aux_columns": [
+      "R_coll=nu_ii/nu_scatt,0",
+      "nu_scatt,0/Omega_i,0",
+      "Gamma_c^(inst)/Omega_i,0",
+      "Gamma_d/Omega_i,0",
+      "tau_sat",
+      "B_sat/B0",
+      "initial_db_dtau"
+    ]
+  },
+  "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "torch_version": "2.11.0+cu128",
+  "sbi_version": "0.27.0"
+}
