@@ -88,7 +88,7 @@ $$
 
 where
 
-$R_{\mathrm{coll}}=\frac{\nu_{ii}}{\nu_{\mathrm{scatt},0}}.$
+$$R_{\mathrm{coll}}=\frac{\nu_{ii}}{\nu_{\mathrm{scatt},0}}.$$
 
 All four coordinates are sampled uniformly in $\log_{10}$.
 
